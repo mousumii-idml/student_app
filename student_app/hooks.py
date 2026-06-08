@@ -4,7 +4,16 @@ app_publisher = "Mousumi"
 app_description = "Student Enrollment Management System"
 app_email = "mousumi@idesignmylife.net"
 app_license = "mit"
-
+override_doctype_dashboards = {
+    "Assignment": "student_app.student_management.doctype.assignment.assignment_dashboard.get_data"
+}
+override_whitelisted_methods = {
+}
+scheduler_events = {
+    "daily": [
+        "student_management.tasks.update_attendance_count"
+    ]
+}
 # Apps
 # ------------------
 

@@ -1,13 +1,8 @@
 import frappe
-from frappe.model.document import Document
-
-
-class Student(Document):
-    pass
 
 
 @frappe.whitelist()
-def get_assignment_details(student):
+def get_latest_assignment(student):
 
     assignment = frappe.get_all(
         "Assignment",

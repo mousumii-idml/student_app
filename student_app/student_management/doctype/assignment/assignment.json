@@ -1,15 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-06-04 17:29:42.058676",
+ "creation": "2026-06-05 15:48:15.268802",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "student",
   "course",
   "semester",
-  "enrollment_date",
-  "course_name"
+  "student",
+  "assignment_details",
+  "status"
  ],
  "fields": [
   {
@@ -31,24 +31,24 @@
    "options": "Semester"
   },
   {
-   "fieldname": "enrollment_date",
-   "fieldtype": "Date",
-   "label": "Enrollment Date"
+   "fieldname": "assignment_details",
+   "fieldtype": "Small Text",
+   "label": "Assignment Details"
   },
   {
-   "fetch_from": "course.course_name",
-   "fieldname": "course_name",
-   "fieldtype": "Data",
-   "label": "Course Name"
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nCompleted\nCancelled"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-08 11:51:18.056545",
+ "modified": "2026-06-08 14:29:44.369775",
  "modified_by": "Administrator",
  "module": "Student Management",
- "name": "Enrollment",
+ "name": "Assignment",
  "owner": "Administrator",
  "permissions": [
   {
@@ -66,9 +66,7 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "student"
+ "states": []
 }

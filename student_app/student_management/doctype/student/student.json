@@ -8,7 +8,10 @@
   "student_name",
   "email",
   "age",
-  "mobile_number"
+  "mobile_number",
+  "status",
+  "grade",
+  "attendance_count"
  ],
  "fields": [
   {
@@ -30,12 +33,28 @@
    "fieldname": "mobile_number",
    "fieldtype": "Data",
    "label": "Mobile Number"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "attendance_count",
+   "fieldtype": "Int",
+   "label": "Attendance Count"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-04 17:37:24.850891",
+ "modified": "2026-06-08 15:16:09.095219",
  "modified_by": "Administrator",
  "module": "Student Management",
  "name": "Student",

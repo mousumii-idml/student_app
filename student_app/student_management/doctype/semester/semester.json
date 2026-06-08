@@ -1,46 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "hash",
- "creation": "2026-06-04 17:28:32.390988",
+ "creation": "2026-06-05 15:50:59.374913",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "course_name",
-  "duration",
-  "fees",
-  "available_seats"
+  "semester_name"
  ],
  "fields": [
   {
-   "fieldname": "course_name",
+   "fieldname": "semester_name",
    "fieldtype": "Data",
-   "label": "Course Name"
-  },
-  {
-   "fieldname": "duration",
-   "fieldtype": "Int",
-   "label": "Duration"
-  },
-  {
-   "fieldname": "fees",
-   "fieldtype": "Currency",
-   "label": "Fees"
-  },
-  {
-   "fieldname": "available_seats",
-   "fieldtype": "Int",
-   "label": "Available Seats"
+   "label": "Semester Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-08 11:48:44.498362",
+ "modified": "2026-06-05 15:51:23.334736",
  "modified_by": "Administrator",
  "module": "Student Management",
- "name": "Course",
- "naming_rule": "Random",
+ "name": "Semester",
  "owner": "Administrator",
  "permissions": [
   {
@@ -58,9 +38,7 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "course_name"
+ "states": []
 }
