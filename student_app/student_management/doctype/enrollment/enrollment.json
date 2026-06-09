@@ -45,7 +45,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-08 11:51:18.056545",
+ "modified": "2026-06-09 11:01:08.898100",
  "modified_by": "Administrator",
  "module": "Student Management",
  "name": "Enrollment",
@@ -60,6 +60,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Enrollment Officer",
    "share": 1,
    "write": 1
   }
