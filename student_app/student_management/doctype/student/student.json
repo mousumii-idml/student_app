@@ -11,7 +11,8 @@
   "mobile_number",
   "status",
   "grade",
-  "attendance_count"
+  "attendance_count",
+  "courses"
  ],
  "fields": [
   {
@@ -49,12 +50,18 @@
    "fieldname": "attendance_count",
    "fieldtype": "Int",
    "label": "Attendance Count"
+  },
+  {
+   "fieldname": "courses",
+   "fieldtype": "Table",
+   "label": "Courses",
+   "options": "Student Course"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-09 10:59:22.950405",
+ "modified": "2026-06-10 17:31:53.537772",
  "modified_by": "Administrator",
  "module": "Student Management",
  "name": "Student",
@@ -89,5 +96,6 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
